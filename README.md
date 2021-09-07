@@ -1,1 +1,1 @@
-# rsschool-cv
+https://EugeneMusic.github.io/rsschool-cv/cv

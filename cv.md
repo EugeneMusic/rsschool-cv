@@ -1,6 +1,7 @@
 # __Muzychenko Eugene__ 
  __Junior Frontend Developer__
 ---
+
 __Contacts:__
 ---
 * __Location:__ Minsk, Belarus
@@ -34,11 +35,13 @@ __Code example:__
   }
 }
 ```
+
 __Courses:__
 ---
 * *CS50 (in progress)*
 * *JavaScript Manual on learnjavascript.ru (in progress)*
 * *RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)*
+
 
 __Languages:__
 ---

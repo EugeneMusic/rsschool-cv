@@ -42,7 +42,6 @@ __Courses:__
 * *JavaScript Manual on learnjavascript.ru (in progress)*
 * *RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)*
 
-
 __Languages:__
 ---
 * *Russian - native*

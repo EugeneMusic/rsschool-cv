@@ -1,0 +1,44 @@
+.avatar {
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header , footer {
+    background-image: url(bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navigator li {
+    display: inline;
+    font-size: 30px;
+}
+.navigator {
+    text-align: center;
+}
+body {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+a {
+    text-decoration: none;
+    color: rgb(235, 231, 10);
+    border: rgb(235, 231, 10) solid 3px;
+    background-color:rgb(0, 0, 0);
+}
+section {
+    border:rgb(235, 231, 10) solid 3px;
+    margin-bottom: 5px;
+    color: rgb(235, 231, 10);
+}
+footer section ul li {
+    display: inline-block;
+    background-color: none;
+}
+.footer-link {
+    background-color: transparent;
+    border: none;
+}

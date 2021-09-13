@@ -15,6 +15,7 @@ header , footer {
 .navigator li {
     display: inline;
     font-size: 30px;
+    padding-left: 0%;
 }
 .navigator {
     text-align: center;

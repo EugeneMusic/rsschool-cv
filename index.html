@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,93 +9,127 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <title>Muzychenko Eugene</title>
 </head>
+
 <body>
     <div class="conteiner">
-    <header>
-    <h1>Muzychenko Eugene</h1>
-    <h2>Junior Frontend Developer</h2>
-    <div>
-        <img src="avatar.JPG" alt="avatar" class="avatar">
-        <nav class="navigator">
-            <ul class="navlist">
-                <li><a href='#contacts'>Contacts</a></li>
-                <li><a href='#about'>About</a></li>
-                <li><a href='#skills'>Skills and Proficiency</a></li>
-                <li><a href='#code'>Code example</a></li>
-                <li><a href='#courses'>Courses</a></li>
-                <li><a href='#languages'>Languages</a></li>
-            </ul>
-        </nav>
-    </div>
-    </header>
-<main>
-   <section>
-       <h2 id='contacts'>Contacts:</h2>
-       <ul>
-           <li>Location: Minsk, Belarus</li>
-           <li>Phone:  +375 29 330-56-77</li>
-           <li>E-mail:<div id="mail">muzychenko_eugene@mail.ru</div></li>
-           <li>GitHub: EugeneMusic</li>
-           <li>LinkedIn: Eugene Muzychenko</li>
-        </ul>
-    </section> 
-    <section>
-        <h2 id='about'>About:</h2>
-        <p>I graduated from the Belarusian state economic university (BSEU) in 2015 with a degree in economics. I am currently working in the automotive business, but I have a great desire to develop in the field of IT.
-             That's why I started taking the CS50 course in programming fundamentals and the front-end development course from RS School.
-              I believe that hard work and my persistence will help me to achieve high results in this field.
-        </p>
-    </section>
-    <section> 
-        <h2 id='skills'>Skills and Proficiency:</h2>
-            <ul>
-                <li>HTML5, CSS3</li>
-                <li>Flexbox, Grid</li>
-                <li>JavaScript</li>
-                <li>Git, GitHub</li>
-            </ul>
-    </section>
-    <section>
-        <h2 id='code'>Code example:</h2>
-        <pre><code>function explode(s) {
+        <header>
+            <div class="burger">
+                <aside>
+                    <ul class="menu">
+                        <li><a href='#contacts'>Contacts</a></li>
+                        <li><a href='#about'>About</a></li>
+                        <li><a href='#skills'>Skills and Proficiency</a></li>
+                        <li><a href='#code'>Code and Projects example</a></li>
+                        <li><a href='#courses'>Courses</a></li>
+                        <li><a href='#languages'>Languages</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <h1>Muzychenko Eugene</h1>
+            <h2>Junior Frontend Developer</h2>
+            <div>
+                <img src="avatar.JPG" alt="avatar" class="avatar">
+                <nav class="navigator">
+                    <ul class="navlist">
+                        <li><a href='#contacts'>Contacts</a></li>
+                        <li><a href='#about'>About</a></li>
+                        <li><a href='#skills'>Skills and Proficiency</a></li>
+                        <li><a href='#code'>Code and Projects example</a></li>
+                        <li><a href='#courses'>Courses</a></li>
+                        <li><a href='#languages'>Languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2 id='contacts'>Contacts:</h2>
+                <ul>
+                    <li>Location: Minsk, Belarus</li>
+                    <li>Phone: +375 29 330-56-77</li>
+                    <li>E-mail: muzychenko_eugene@mail.ru</li>
+                    <li>GitHub: EugeneMusic</li>
+                    <li>LinkedIn: Eugene Muzychenko</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id='about'>About:</h2>
+                <article>
+                    <p>I graduated from the Belarusian state economic university (BSEU) in 2015 with a degree in
+                        economics.
+                        I am currently working in the automotive business, but I have a great desire to develop in the
+                        field
+                        of IT.
+                        That's why I started taking the CS50 course in programming fundamentals and the front-end
+                        development course from RS School.
+                        I believe that hard work and my persistence will help me to achieve high results in this field.
+                    </p>
+                </article>
+            </section>
+            <section>
+                <h2 id='skills'>Skills and Proficiency:</h2>
+                <ul>
+                    <li>HTML5, CSS3</li>
+                    <li>Flexbox, Grid</li>
+                    <li>JavaScript</li>
+                    <li>Git, GitHub</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id='code'>Code and Projects example:</h2>
+                <div>codewars</div>
+                <pre><code>function explode(s) {
     let news = '';
     s = s.split('');
-    for (let i = 0; i < s.length; i++) {
-        for (let j = 0; j < (Number(s[i])); j++) {
+    for (let i = 0; i < s.length; i++) { 
+    for (let j = 0; j < (Number(s[i])); j++) {
             news = news + s[i];
         }
     }
     return news;
     }
-        </code></pre>
-    </section>
-    <section>
-        <h2 id='courses'>Courses:</h2>
-        <ul>
-           <li>CS50 (in progress)</li>
-           <li>JavaScript Manual on learnjavascript.ru (in progress)</li>
-           <li>RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)</li>
-        </ul>
-   </section>
-   <section>
-       <h2 id='languages'>Languages:</h2>
-       <ul>
-           <li>English - A2</li>
-           <li>Russian - native</li>
-        </ul>
-    </section>
-</main>
-<footer>
-    <section>
-        <ul>
-            <li><a href="https://github.com/EugeneMusic"><img class="footer-link"src="ghlogo.svg" alt="GitHub Logo">My GitHub</a></li>
-            <li>2021</li>
-            <li><a href="https://rs.school/js/"><img class="footer-link" src="rs_school_js.svg" alt="rsschool"></a></li>
-        </ul>
-    </section>
-</footer>
-</div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+                </code></pre>
+                <div>First project</div>
+                <figure>
+                    <a href="https://EugeneMusic.github.io/rsschool-cv/">
+                        <img class="footer-link" src="cv.png" alt="CV Project">
+                    </a>
+                    <figcaption>My first CV. (HTML, CSS, JS)</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2 id='courses'>Courses:</h2>
+                <ul>
+                    <li>CS50 (in progress)</li>
+                    <li>JavaScript Manual on learnjavascript.ru (in progress)</li>
+                    <li>RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)</li>
+                </ul>
+            </section>
+            <section>
+                <h2 id='languages'>Languages:</h2>
+                <ul>
+                    <li>English - A2</li>
+                    <li>Russian - native</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <ul>
+                    <li><a href="https://github.com/EugeneMusic"><img class="footer-link" src="ghlogo.svg"
+                                alt="GitHub Logo">My GitHub</a></li>
+                    <li>
+                        <h3>2021</h3>
+                    </li>
+                    <li><a href="https://rs.school/js/"><img class="footer-link" src="rs_school_js.svg"
+                                alt="rsschool"></a></li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="main.js"></script>
 </body>
+
 </html>

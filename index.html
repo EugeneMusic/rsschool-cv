@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <title>Muzychenko Eugene</title>
 </head>
 <body>
+    <div class="conteiner">
     <header>
     <h1>Muzychenko Eugene</h1>
     <h2>Junior Frontend Developer</h2>
     <div>
         <img src="avatar.JPG" alt="avatar" class="avatar">
-    </div>
         <nav class="navigator">
-            <ul>
+            <ul class="navlist">
                 <li><a href='#contacts'>Contacts</a></li>
                 <li><a href='#about'>About</a></li>
                 <li><a href='#skills'>Skills and Proficiency</a></li>
@@ -24,21 +25,22 @@
                 <li><a href='#languages'>Languages</a></li>
             </ul>
         </nav>
+    </div>
     </header>
 <main>
    <section>
-   <h2 id='contacts'>Contacts:</h2>
-    <ul>
-        <li>Location: Minsk, Belarus</li>
-        <li>Phone:  +375 29 330-56-77</li>
-        <li>E-mail: muzychenko_eugene@mail.ru</li>
-        <li>GitHub: EugeneMusic</li>
-        <li>LinkedIn: Eugene Muzychenko</li>
-    </ul>
+       <h2 id='contacts'>Contacts:</h2>
+       <ul>
+           <li>Location: Minsk, Belarus</li>
+           <li>Phone:  +375 29 330-56-77</li>
+           <li>E-mail:<div id="mail">muzychenko_eugene@mail.ru</div></li>
+           <li>GitHub: EugeneMusic</li>
+           <li>LinkedIn: Eugene Muzychenko</li>
+        </ul>
     </section> 
     <section>
         <h2 id='about'>About:</h2>
-        <p>I am currently working in the automotive business, but I have a great desire to develop in the field of IT.
+        <p>I graduated from the Belarusian state economic university (BSEU) in 2015 with a degree in economics. I am currently working in the automotive business, but I have a great desire to develop in the field of IT.
              That's why I started taking the CS50 course in programming fundamentals and the front-end development course from RS School.
               I believe that hard work and my persistence will help me to achieve high results in this field.
         </p>
@@ -53,17 +55,18 @@
             </ul>
     </section>
     <section>
-    <h2 id='code'>Code example:</h2>
-        <pre><code>function getMiddle(s) {
-    if (s.length % 2 === 0) {
-        let letter = s[s.length / 2 - 1] +s[s.length / 2];
-        return letter;
+        <h2 id='code'>Code example:</h2>
+        <pre><code>function explode(s) {
+    let news = '';
+    s = s.split('');
+    for (let i = 0; i < s.length; i++) {
+        for (let j = 0; j < (Number(s[i])); j++) {
+            news = news + s[i];
         }
-    else {
-        return s[Math.round(s.length / 2 - 1)];
     }
+    return news;
     }
-            </code></pre>
+        </code></pre>
     </section>
     <section>
         <h2 id='courses'>Courses:</h2>
@@ -75,20 +78,23 @@
    </section>
    <section>
        <h2 id='languages'>Languages:</h2>
-        <ul>
-            <li>Russian - native</li>
-            <li>English - A2</li>
+       <ul>
+           <li>English - A2</li>
+           <li>Russian - native</li>
         </ul>
     </section>
 </main>
 <footer>
     <section>
         <ul>
-            <li><a class="footer-link" href="https://github.com/EugeneMusic"><img src="ghlogo.svg" alt="GitHub Logo" height="80" width="auto"></a></li>
-            <li><time datetime="13.09.2021"> 2021</time> </li>
-            <li><a class="footer-link" href="https://rs.school/js/"><img src="rs_school_js.svg" alt="rsschool" height="80" width="auto"></a></li>
+            <li><a href="https://github.com/EugeneMusic"><img class="footer-link"src="ghlogo.svg" alt="GitHub Logo">My GitHub</a></li>
+            <li>2021</li>
+            <li><a href="https://rs.school/js/"><img class="footer-link" src="rs_school_js.svg" alt="rsschool"></a></li>
         </ul>
     </section>
 </footer>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

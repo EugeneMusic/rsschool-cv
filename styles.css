@@ -1,45 +1,201 @@
 .avatar {
     border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-    display: block;
-    margin-left: auto;
+    border: 3px solid rgb(6, 54, 66);
+    width: 50%;
+    max-width: 500px;
+    max-height: 50%;
+    display: inline;
+    margin-left: 5px;
     margin-right: auto;
+
 }
-header , footer {
-    background-image: url(bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+header {
+    background-color:rgb(170, 211, 221);
+    border-radius: 10px;
+    border: rgb(6, 54, 66) solid 3px;
+}
+li {
+    list-style-position: inside;
+    list-style-type: square;
+    text-align: left;
+    margin-left: 10%;
 }
 
+
 .navigator li {
-    display: inline;
-    font-size: 30px;
-    padding-left: 0%;
+    font-size: 2vw;
+    min-height: 11%;
+    padding: 1%;
+    list-style-type: square;
+    color: rgb(6, 54, 66);
+    list-style-position:outside;
 }
 .navigator {
-    text-align: center;
+    display: inline;
+    width: 45%;
+    text-align: left;
+    float: right;
+    height: 100%;
 }
 body {
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, rgb(6, 54, 66), rgb(170, 211, 221), rgb(6, 54, 66));
+    margin: 0%;
+}
+h1,h2 {
+    color: rgb(6, 54, 66);
+    
 }
 a {
     text-decoration: none;
-    color: rgb(235, 231, 10);
-    border: rgb(235, 231, 10) solid 3px;
-    background-color:rgb(0, 0, 0);
+    color: rgb(6, 54, 66);
+    border: rgb(6, 54, 66) solid 3px;
+    background-color:rgb(170, 211, 221);
 }
 section {
-    border:rgb(235, 231, 10) solid 3px;
-    margin-bottom: 5px;
-    color: rgb(235, 231, 10);
+    border:rgb(6, 54, 66) solid 3px;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: rgb(6, 54, 66);
+    background-color: rgb(170, 211, 221);
+    font-size: 2vw;
 }
 footer section ul li {
     display: inline-block;
     background-color: none;
+    width: 30%;
+    margin-left: 0%;
+    text-align: center;
+}
+footer section ul li a {
+    border: none;
+}
+figure a {
+    border: none;
+}
+figure  {
+    border: 3px solid rgb(6, 54, 66);;
 }
 .footer-link {
     background-color: transparent;
     border: none;
+    display: inline;
+    text-align: left;
+    width: 100%;
+}
+pre {
+    overflow: auto;
+    margin: 5px;
+    border-radius: 10px;
+}
+.conteiner {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+a:hover {
+    color: rgb(170, 211, 221);
+    background-color: rgb(6, 54, 66);
+}
+p {
+    margin: 5%;
+}
+.burger {
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+    width: 15%;
+    height: 50px;
+    background: linear-gradient( to bottom,rgb(6, 54, 66) 20%,rgb(170, 211, 221) 20%,rgb(170, 211, 221) 40%,
+     rgb(6, 54, 66) 40%,rgb(6, 54, 66) 60%,rgb(170, 211, 221) 60%,rgb(170, 211, 221) 80%, rgb(6, 54, 66) 80%,rgb(6, 54, 66) 100%)
+}
+.burger_active {
+    display: block;
+    cursor: pointer;
+    width: 15%;
+    height: 50px;
+    background: linear-gradient(45deg, transparent 45%,  rgb(6, 54, 66) 45%,rgb(6, 54, 66) 55%, transparent 55%, transparent 100%),
+    linear-gradient(135deg, transparent 45%,  rgb(6, 54, 66) 45%,rgb(6, 54, 66) 55%, transparent 55%, transparent 100%);
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 30%;
+    padding-top: 100px;
+    font-size: 5vw;
+    min-height: 11%;
+    padding: 1%;
+    list-style-type: square;
+    color: rgb(6, 54, 66);
+    list-style-position:outside;
+}
+.menu_active {
+    display: block;
+    width: 100vw;
+    height: 300px;
+    background: linear-gradient(45deg,rgba(6, 54, 66, 0.5),rgba(170, 211, 221, 0.5)); 
+    text-align: left;
+    font-size: 25px;
+    padding-top: 25px;
+}
+.menu_active li {
+    padding-top: 20px;
+}
+
+@media (max-width: 1440px) {
+    .conteiner {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: auto;
+}
+.navigator li {
+    padding: 3%;
+}
+}
+@media (max-width: 1250px) {
+    .conteiner {
+        margin-left: 3%;
+        margin-right: 3%;
+        width: auto;
+    }
+    .navigator li {
+        padding: 3%;
+    }
+    section {
+        font-size: 25px;
+    }
+    .navigator li {
+        font-size: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .navigator {
+        display: none;
+    }
+    .conteiner {
+        margin-left: 1%;
+        margin-right: 1%;
+        width: auto;
+    }
+    #mail {
+        font-size: 23px;
+    }
+    .burger {
+        display: block;
+    }
+}
+@media (max-width: 420px) {
+    li {
+        margin-left: 0px;
+    }
+    ul {
+        padding-left: 3px;
+    }
 }

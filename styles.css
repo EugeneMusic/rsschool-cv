@@ -43,3 +43,7 @@ footer section ul li {
     background-color: transparent;
     border: none;
 }
+
+.footer_item {
+    list-style-type: none;
+}
